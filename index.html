@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="X-mote 是一款为 Windows 打造的安全、可见、仅限局域网的远程协助工具。无需云端中继，连接全程 TLS 加密。" />
+  <meta name="theme-color" content="#07110f" />
+  <title>X-mote — 让远程协助留在局域网</title>
+  <link rel="icon" href="assets/x-mote-logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="X-mote 首页">
+      <img src="assets/x-mote-logo.png" alt="" />
+      <span>X-mote</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#product" data-zh="产品" data-en="Product">产品</a>
+      <a href="#security" data-zh="安全" data-en="Security">安全</a>
+      <a href="#workflow" data-zh="使用方式" data-en="How it works">使用方式</a>
+      <a href="#about" data-zh="关于" data-en="About">关于</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" type="button" aria-label="Switch to English">EN</button>
+      <a class="mini-cta" href="#download" data-zh="获取 X-mote" data-en="Get X-mote">获取 X-mote</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span><span data-zh="专为 Windows 局域网而生" data-en="Built for Windows LANs">专为 Windows 局域网而生</span></div>
+        <h1 data-zh="远程协助，<br><em>不必绕远。</em>" data-en="Remote support,<br><em>without the detour.</em>">远程协助，<br><em>不必绕远。</em></h1>
+        <p class="hero-lead" data-zh="X-mote 让两台 Windows 电脑在同一局域网内直接连接。没有云端中继，没有隐藏控制，只有清晰、快速、经过授权的协助。" data-en="X-mote connects two Windows PCs directly on the same local network. No cloud relay. No hidden control. Just clear, fast, authorized support.">X-mote 让两台 Windows 电脑在同一局域网内直接连接。没有云端中继，没有隐藏控制，只有清晰、快速、经过授权的协助。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#download"><span data-zh="获取 Windows 版" data-en="Get it for Windows">获取 Windows 版</span><span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#product"><span data-zh="看看它如何工作" data-en="See how it works">看看它如何工作</span><span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><i></i><b data-zh="当前版本" data-en="Current version">当前版本</b> 0.8.3</span>
+          <span><i></i>Windows 10 / 11 · x64</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1" aria-label="X-mote 产品界面示意图">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="app-window">
+          <div class="window-bar">
+            <div class="window-brand"><img src="assets/x-mote-logo.png" alt="" /><span>X-mote</span><small>v0.8.3</small></div>
+            <div class="window-controls"><i></i><i></i><i></i></div>
+          </div>
+          <div class="app-body">
+            <aside class="app-sidebar">
+              <div class="side-tabs"><span class="active">⌂</span><span>↗</span><span>◇</span></div>
+              <div class="app-label" data-zh="本机远程协助" data-en="Local support">本机远程协助</div>
+              <label data-zh="本机名称" data-en="Device name">本机名称</label>
+              <div class="fake-input">Studio-PC</div>
+              <label data-zh="被控密码" data-en="Access password">被控密码</label>
+              <div class="fake-input">••••••••</div>
+              <div class="fake-button"><span class="status-led"></span><span data-zh="正在监听 7878" data-en="Listening on 7878">正在监听 7878</span></div>
+              <div class="secure-row"><span>◈</span><span data-zh="TLS 加密已启用" data-en="TLS encryption on">TLS 加密已启用</span></div>
+            </aside>
+            <div class="remote-canvas">
+              <div class="canvas-top"><span>Studio-PC · 192.168.1.24</span><strong><i></i><span data-zh="已连接" data-en="Connected">已连接</span></strong></div>
+              <div class="screen-art">
+                <div class="screen-grid"></div>
+                <div class="screen-card card-a"><span></span><span></span><span></span></div>
+                <div class="screen-card card-b"><span></span><span></span></div>
+                <div class="cursor"></div>
+                <div class="session-toast"><span class="session-icon">✓</span><div><b data-zh="远程协助进行中" data-en="Remote support active">远程协助进行中</b><small data-zh="被控端始终可见" data-en="Always visible on host">被控端始终可见</small></div></div>
+              </div>
+              <div class="canvas-bottom"><span><i></i> 42 ms</span><span>60 FPS</span><span data-zh="均衡画质" data-en="Balanced">均衡画质</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="trust-float"><span>⌾</span><div><b data-zh="本地直连" data-en="Direct local link">本地直连</b><small data-zh="数据不经过第三方服务器" data-en="No third-party server">数据不经过第三方服务器</small></div></div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="产品优势">
+      <div><span>01</span><b data-zh="局域网直连" data-en="Direct on LAN">局域网直连</b></div>
+      <div><span>02</span><b data-zh="TLS 全程加密" data-en="End-to-end TLS">TLS 全程加密</b></div>
+      <div><span>03</span><b data-zh="无需注册账户" data-en="No account required">无需注册账户</b></div>
+      <div><span>04</span><b data-zh="会话始终可见" data-en="Always-visible session">会话始终可见</b></div>
+    </section>
+
+    <section class="product section-shell section-pad" id="product">
+      <div class="section-heading reveal">
+        <span class="kicker" data-zh="专注，才能更快" data-en="Focused by design">专注，才能更快</span>
+        <h2 data-zh="需要的能力，<br>一个都不少。" data-en="Everything you need.<br>Nothing you don't.">需要的能力，<br>一个都不少。</h2>
+        <p data-zh="从自动发现设备到顺畅控制，X-mote 把局域网远程协助整理成一套简洁、可靠的工作流。" data-en="From device discovery to responsive control, X-mote turns local remote support into one simple, reliable workflow.">从自动发现设备到顺畅控制，X-mote 把局域网远程协助整理成一套简洁、可靠的工作流。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature feature-large reveal">
+          <div class="feature-index">01</div>
+          <div class="feature-icon radar-icon"><i></i><i></i><span></span></div>
+          <div><h3 data-zh="发现，就在身边" data-en="Discover what's nearby">发现，就在身边</h3><p data-zh="自动发现同一局域网中的 X-mote 设备，也支持输入 IP 地址手动连接。" data-en="Automatically find X-mote devices on your LAN, or connect directly by IP address.">自动发现同一局域网中的 X-mote 设备，也支持输入 IP 地址手动连接。</p></div>
+          <div class="device-stack"><div><span class="device-dot"></span><b>Design-PC</b><small>192.168.1.24</small><em>→</em></div><div><span class="device-dot"></span><b>Office-02</b><small>192.168.1.36</small><em>→</em></div></div>
+        </article>
+        <article class="feature reveal delay-1">
+          <div class="feature-index">02</div>
+          <div class="simple-icon">⌁</div>
+          <h3 data-zh="三档画质，随时切换" data-en="Three streaming profiles">三档画质，随时切换</h3>
+          <p data-zh="流畅、均衡、清晰，在响应速度与画面细节之间自由选择。" data-en="Switch between Smooth, Balanced, and Clear to fit your network.">流畅、均衡、清晰，在响应速度与画面细节之间自由选择。</p>
+          <div class="quality-switch"><span data-zh="流畅" data-en="Smooth">流畅</span><span class="active" data-zh="均衡" data-en="Balanced">均衡</span><span data-zh="清晰" data-en="Clear">清晰</span></div>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-index">03</div>
+          <div class="simple-icon">⌨</div>
+          <h3 data-zh="控制自然，反馈清楚" data-en="Responsive, predictable control">控制自然，反馈清楚</h3>
+          <p data-zh="鼠标、键盘和文本剪贴板同步，输入状态与延迟数据一目了然。" data-en="Mouse, keyboard, and text clipboard sync with visible input and latency stats.">鼠标、键盘和文本剪贴板同步，输入状态与延迟数据一目了然。</p>
+          <div class="stat-line"><span>POINTER <b>128 / 128</b></span><span>KEYS <b>42 / 42</b></span></div>
+        </article>
+        <article class="feature feature-dark reveal delay-1">
+          <div class="feature-index">04</div>
+          <div class="simple-icon">◫</div>
+          <h3 data-zh="一台应用，两种角色" data-en="One app, both roles">一台应用，两种角色</h3>
+          <p data-zh="同一个 X-mote 既可发起协助，也可在授权后接受协助，无需部署两套软件。" data-en="Use the same X-mote app to give or receive support. No separate host package.">同一个 X-mote 既可发起协助，也可在授权后接受协助，无需部署两套软件。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="security section-pad" id="security">
+      <div class="security-inner section-shell">
+        <div class="security-copy reveal">
+          <span class="kicker light" data-zh="安全不是附加选项" data-en="Security is not an add-on">安全不是附加选项</span>
+          <h2 data-zh="每一次连接，<br>都应该心里有数。" data-en="Every connection<br>should be understood.">每一次连接，<br>都应该心里有数。</h2>
+          <p data-zh="X-mote 从架构上限制远程协助的边界：只在局域网内工作、需要密码授权、在被控端持续展示会话状态。" data-en="X-mote limits remote support by design: LAN-only operation, password authorization, and a persistent session notice on the controlled PC.">X-mote 从架构上限制远程协助的边界：只在局域网内工作、需要密码授权、在被控端持续展示会话状态。</p>
+          <a class="button button-light" href="mailto:shawynchen@outlook.com?subject=X-mote%20Security"><span data-zh="咨询安全细节" data-en="Ask about security">咨询安全细节</span><span>↗</span></a>
+        </div>
+        <div class="security-list reveal delay-1">
+          <div><span>01</span><div><h3 data-zh="TLS 加密与证书固定" data-en="TLS encryption & certificate pinning">TLS 加密与证书固定</h3><p data-zh="屏幕、输入与剪贴板数据均通过加密连接传输；设备证书意外变化会被阻止。" data-en="Screen, input, and clipboard data travel over encrypted links; unexpected certificate changes are blocked.">屏幕、输入与剪贴板数据均通过加密连接传输；设备证书意外变化会被阻止。</p></div></div>
+          <div><span>02</span><div><h3 data-zh="没有公网中继" data-en="No public relay">没有公网中继</h3><p data-zh="设备在局域网内直接通信，不通过 X-mote 云端或第三方远程服务器。" data-en="Devices communicate directly over your LAN, without an X-mote cloud or third-party remote server.">设备在局域网内直接通信，不通过 X-mote 云端或第三方远程服务器。</p></div></div>
+          <div><span>03</span><div><h3 data-zh="可见、可停、可追溯" data-en="Visible, stoppable, accountable">可见、可停、可追溯</h3><p data-zh="被控端显示明显提示，可随时结束会话；连接记录只保存在本机。" data-en="A clear host-side notice stays visible, sessions can be ended anytime, and logs remain local.">被控端显示明显提示，可随时结束会话；连接记录只保存在本机。</p></div></div>
+          <div><span>04</span><div><h3 data-zh="零自建分析" data-en="No custom analytics">零自建分析</h3><p data-zh="X-mote 不发送自建遥测或设备标识，也不出售个人数据。" data-en="X-mote sends no custom telemetry or device identifiers and never sells personal data.">X-mote 不发送自建遥测或设备标识，也不出售个人数据。</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow section-shell section-pad" id="workflow">
+      <div class="section-heading centered reveal">
+        <span class="kicker" data-zh="三步开始协助" data-en="Support in three steps">三步开始协助</span>
+        <h2 data-zh="连接，本该这么简单。" data-en="Connecting should be this simple.">连接，本该这么简单。</h2>
+      </div>
+      <div class="steps">
+        <article class="reveal"><span>01</span><div class="step-art art-install"><i>X</i></div><h3 data-zh="两台电脑安装 X-mote" data-en="Install X-mote on both PCs">两台电脑安装 X-mote</h3><p data-zh="同一个应用可作为控制端或被控端。" data-en="The same app can control or receive support.">同一个应用可作为控制端或被控端。</p></article>
+        <article class="reveal delay-1"><span>02</span><div class="step-art art-listen"><i></i><b>7878</b></div><h3 data-zh="启动监听并设置密码" data-en="Start listening and set a password">启动监听并设置密码</h3><p data-zh="明确授权，连接信息只在本地使用。" data-en="Authorization is explicit and credentials stay local.">明确授权，连接信息只在本地使用。</p></article>
+        <article class="reveal delay-2"><span>03</span><div class="step-art art-connect"><i></i><i></i><b>→</b></div><h3 data-zh="发现设备，开始协助" data-en="Discover, connect, support">发现设备，开始协助</h3><p data-zh="选择局域网设备，输入密码即可连接。" data-en="Choose a LAN device, enter the password, and connect.">选择局域网设备，输入密码即可连接。</p></article>
+      </div>
+    </section>
+
+    <section class="download section-shell" id="download">
+      <div class="download-inner reveal">
+        <div class="download-mark"><img src="assets/x-mote-logo.png" alt="X-mote" /></div>
+        <div class="download-copy">
+          <span class="kicker light" data-zh="X-mote for Windows" data-en="X-mote for Windows">X-mote for Windows</span>
+          <h2 data-zh="让下一次协助，<br>更近一点。" data-en="Bring your next support<br>session closer.">让下一次协助，<br>更近一点。</h2>
+          <p data-zh="Microsoft Store 版本即将上线。现在可邮件联系获取发布信息或产品支持。" data-en="Coming soon to Microsoft Store. Email us for release updates or product support.">Microsoft Store 版本即将上线。现在可邮件联系获取发布信息或产品支持。</p>
+          <a class="button button-light" href="mailto:shawynchen@outlook.com?subject=X-mote%20%E5%8F%91%E5%B8%83%E4%BF%A1%E6%81%AF"><span data-zh="联系获取发布信息" data-en="Contact for release updates">联系获取发布信息</span><span>↗</span></a>
+        </div>
+        <div class="download-specs"><div><span data-zh="平台" data-en="Platform">平台</span><b>Windows 10 / 11</b></div><div><span data-zh="架构" data-en="Architecture">架构</span><b>x64</b></div><div><span data-zh="当前版本" data-en="Current">当前版本</span><b>0.8.3</b></div><div><span data-zh="许可" data-en="License">许可</span><b data-zh="个人与内部使用" data-en="Personal & internal use">个人与内部使用</b></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about">
+    <div class="footer-main section-shell">
+      <div><a class="brand footer-brand" href="#top"><img src="assets/x-mote-logo.png" alt="" /><span>X-mote</span></a><p data-zh="安全、可见、仅限局域网的 Windows 远程协助。" data-en="Secure, visible, LAN-only remote support for Windows.">安全、可见、仅限局域网的 Windows 远程协助。</p></div>
+      <div class="footer-links"><div><b data-zh="产品" data-en="Product">产品</b><a href="#product" data-zh="功能" data-en="Features">功能</a><a href="#security" data-zh="安全" data-en="Security">安全</a><a href="#workflow" data-zh="使用方式" data-en="How it works">使用方式</a></div><div><b data-zh="联系" data-en="Contact">联系</b><a href="mailto:shawynchen@outlook.com">shawynchen@outlook.com</a></div></div>
+    </div>
+    <div class="footer-bottom section-shell"><span>© 2026 X-mote. All rights reserved.</span><span data-zh="为可信任的协助而设计。" data-en="Designed for support you can trust.">为可信任的协助而设计。</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
